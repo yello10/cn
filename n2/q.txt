@@ -1,0 +1,19 @@
+Lab 10 – NS2 simulator – Network Analysis
+Create a network with a series of ‘n’ nodes connected one after another like a string. The nodes
+are spaced 150m apart from each other. The data communication between any two nodes is
+possible only by transfer of data between neighboring nodes and a single TCP connection is
+established between the source and the destination nodes for transfer of all packets in a specific
+communication. Each node has a buffer/queue which can hold a maximum of 50 packets and can
+aid in transmission of packets in first-in-first-out fashion. Simulate the following for 60 seconds:
+1. communication by the first node to the last node, considering that the first node generates
+data at a rate of 4 packets/second with each packet having 1460 bytes for the following
+window sizes: 4, 8 and 32.
+2. communication by a node to its neighboring node, considering that the former node
+generates data at a rate of 4 packets/second with each packet having 1460 bytes for the
+following window sizes: 4, 8 and 32.
+3. keeping the window size as 8, simultaneous communications by the first node to ith node
+and jth node to the last node (if there are n nodes from 0 through n-1, 0 < i < j < n - 1).
+4. keeping the window size as 8, simulate two communications, the first from node i to j and
+the second from node k to j - 1 (0 < k < j – 1 < i < n) in the following two scenarios:
+a. both communications start at the same time.
+b. the second communication start 10 seconds after the first. 
